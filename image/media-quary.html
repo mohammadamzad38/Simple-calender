@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-quary</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 2px solid tomato;
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        .food img{
+            width: 100%;
+        }
+        /* Smaller device */
+        
+        @media screen and (max-width: 576px) {      
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        /* Medium Device */
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .container>.food>img[src="image/biriyani"]+h3{food Item - $}+p{Price: \$$00}+p>lorem20^btn{Buy Now} -->
+    <div class="container">
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ea soluta facere ipsam culpa totam velit expedita ex, et adipisci.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 2</h3>
+            <p>Price: $200</p>
+            <p>Magni nostrum tenetur maiores, suscipit magnam neque, accusamus corrupti, veritatis incidunt obcaecati ullam eos sint vel reiciendis consectetur minus modi.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 3</h3>
+            <p>Price: $300</p>
+            <p>Totam, deleniti tempore fuga nihil numquam possimus, eius aut expedita vero dicta minus beatae quidem laborum voluptatibus odio, necessitatibus eum?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 4</h3>
+            <p>Price: $400</p>
+            <p>Saepe odit error ab rerum? Consequuntur voluptates dolorum commodi voluptas et atque, reiciendis labore dolores fugiat qui repellat mollitia hic?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 5</h3>
+            <p>Price: $500</p>
+            <p>Omnis, vitae. Ab voluptatibus non eaque aliquam expedita error beatae rerum, nemo veritatis corrupti optio odit nisi iusto. Reprehenderit, magni?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 6</h3>
+            <p>Price: $600</p>
+            <p>Esse nisi fuga reiciendis sit, pariatur iusto beatae ratione, officiis alias commodi nulla facilis ducimus vel in sint? Accusantium, excepturi.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 7</h3>
+            <p>Price: $700</p>
+            <p>Harum quam voluptatum sequi! Unde, et sequi deleniti quis molestias ratione, laborum amet possimus nulla numquam sint commodi impedit temporibus.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 8</h3>
+            <p>Price: $800</p>
+            <p>Totam, ipsam similique ab ratione repellendus nemo beatae consequuntur vero mollitia? Blanditiis consequuntur quos ratione similique molestias eaque officia cumque.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 9</h3>
+            <p>Price: $900</p>
+            <p>Voluptatum expedita laborum commodi. Sed eaque sint cupiditate totam nobis adipisci optio natus quos soluta cumque qui, rerum commodi dolore?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 10</h3>
+            <p>Price: $1000</p>
+            <p>Architecto aut illo officia ullam vitae asperiores at nostrum assumenda laudantium eaque! Quis, exercitationem magni mollitia earum ducimus repudiandae blanditiis.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 11</h3>
+            <p>Price: $1100</p>
+            <p>Voluptates officiis suscipit et nisi vero dolorem blanditiis temporibus magnam sed quo placeat porro obcaecati officia cumque, nulla sapiente odit!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./biriyani.png" alt="">
+            <h3>food Item - 12</h3>
+            <p>Price: $1200</p>
+            <p>Sapiente ipsa nihil, doloremque exercitationem totam eius magni, ipsum id ea dolorem laboriosam saepe, necessitatibus ex accusamus! Iusto, a asperiores.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calender</title>
     <style>
+        #parent-head{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .heading{
+            
+            background-color: rgb(222, 172, 137);
+            padding: 20px;
+            width: 50%;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+
+        }
         .calender{
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: 1px repeat(6, 50px);
+            grid-template-rows: 30px repeat(6, 50px);
             row-gap: 20px;
             column-gap: 10px;
             border-radius: 5px;
@@ -32,6 +47,10 @@
     </style>
 </head>
 <body>
+    <div id="parent-head">
+        <h2 class="heading">My personal Calender</h2>
+    </div>
+    
     <div class="calender">
          <div class="day">Sat</div>
          <div class="day">Sun</div>

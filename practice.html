@@ -105,6 +105,55 @@
             align-items: center;
             
         }
+        /* image design */
+        
+        .image-container{
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        @media screen and (max-width: 430px){
+            .image-container{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 430px) and (max-width: 992px){
+            .image-container{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1400px){
+            .image-container{
+                width: 100%;
+            }
+        } 
+
+        /* fourth practice */
+        .box-parent{
+            margin: 60px;
+        }
+        .box-first{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .box-second{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        button{
+            background-color: rgb(13, 88, 174);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;    
+
+        }
+
 
     </style>
 
@@ -129,6 +178,41 @@
             </div>
         </div>
     </div>
+    </section>
+    <section class="image-parent">
+        <div class="image-container">
+            <img src="./image/Standing_white_tiger.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="box-parent">
+        <div class="grand-parent">
+            <div class="box-first">
+                <div class="container-box">
+                    <img src="./image/biriyani.png" alt="">
+                </div>
+                <div class="child-box">
+                    <h3>Kasten Biriyani House</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptatem quo culpa modi itaque labore, consectetur minus aliquid! Voluptatem excepturi ullam iusto sunt ipsa officia qui, nisi doloribus. Natus, possimus.</p>
+                    <div class="btn">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+
+           <div class="box-second">
+            <div class="container-box">
+                <img src="./image/biriyani.png" alt="">
+            </div>
+            <div class="child-box">
+                <h3>Kasten Biriyani House</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptatem quo culpa modi itaque labore, consectetur minus aliquid! Voluptatem excepturi ullam iusto sunt ipsa officia qui, nisi doloribus. Natus, possimus.</p>
+                <div class="btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+           </div>
+        </div>
     </section>
 </body>
 </html>

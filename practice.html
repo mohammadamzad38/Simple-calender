@@ -40,6 +40,66 @@
             }
         }
 
+        /* Second practice */
+        .second-box{
+            margin: 100px;
+        }
+        .parent-box{
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+        .left{
+            background-color: rgb(148, 18, 77);
+            height: 300px;
+            border-radius: 5px;
+            
+            
+        }
+        .Right{
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px;
+            
+        }
+        .right-top{
+            background-color: orange;
+            border-radius: 5px;
+        }   
+        .right-bottom{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px; 
+            
+        }
+        .right-bottom-left{
+            background-color: rgb(138, 29, 138);
+            border-radius: 5px;
+            
+        }
+        .right-bottom-right{
+            background-color: rgb(165, 167, 168);
+            border-radius: 5px; 
+        }
+        @media screen and (max-width: 576px) {
+            .parent-box{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .right-bottom{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+        }
+
+        /* shared style */
+        .left, .right-top, .right-bottom-left, .right-bottom-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
     </style>
 
 </head>
@@ -48,5 +108,21 @@
         <div class="container1"><p>Left</p></div>
         <div class="container2"><p>Right</p></div>
     </div>
+    <section class="second-box">
+
+        <div class="parent-box">
+        <div class="left">
+            1
+        </div>
+        <div class="Right">
+            <div class="right-top"> 2 
+            </div>
+            <div class="right-bottom">
+                <div class="right-bottom-left">3</div>
+                <div class="right-bottom-right">4</div>
+            </div>
+        </div>
+    </div>
+    </section>
 </body>
 </html>

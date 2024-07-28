@@ -59,30 +59,36 @@
         }
         .Right{
             display: grid;
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
             gap: 5px;
             
         }
         .right-top{
             background-color: orange;
             border-radius: 5px;
+            height: 150px;
         }   
         .right-bottom{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 5px; 
             
+            
         }
         .right-bottom-left{
             background-color: rgb(138, 29, 138);
             border-radius: 5px;
-            
+            height: 145px;
         }
         .right-bottom-right{
             background-color: rgb(165, 167, 168);
-            border-radius: 5px; 
+            border-radius: 5px;
+            height: 145px;
         }
         @media screen and (max-width: 576px) {
+            .left{
+                height: 150px;
+            }
             .parent-box{
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -97,7 +103,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            
         }
 
     </style>
@@ -115,7 +121,7 @@
             1
         </div>
         <div class="Right">
-            <div class="right-top"> 2 
+            <div class="right-top">2 
             </div>
             <div class="right-bottom">
                 <div class="right-bottom-left">3</div>
